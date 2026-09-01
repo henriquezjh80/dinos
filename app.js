@@ -611,3 +611,31 @@ document
         });
 
     });
+/* ==================================================
+   FICHA INDIVIDUAL - DINOWORLD
+   ================================================== */
+
+.ficha-header {
+    @media (max-width: 500px) {
+
+    .ficha-logo {
+        font-size: 1.2rem;
+    }
+
+    .ficha-nav a {
+        font-size: 0.85rem;
+    }
+
+    .ficha-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .ficha-panel {
+        padding: 30px 25px;
+    }
+
+    .ficha-hero-info h1 {
+        font-size: 2.5rem;
+    }
+
+}
