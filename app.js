@@ -454,12 +454,21 @@ document
             () => {
 
                 const id =
-                    boton.dataset.dino;
+    boton.dataset.dino;
 
 
-                const dino =
-                    dinosaurios[id];
+// T-REX TIENE SU PROPIA FICHA
+if (id === "trex") {
 
+    window.location.href =
+        "trex.html";
+
+    return;
+}
+
+
+const dino =
+    dinosaurios[id];
 
                 modalImagen.src =
                     dino.imagen;
