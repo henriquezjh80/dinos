@@ -1479,107 +1479,265 @@ footer {
 
 }
 /* ==================================================
-   FICHA INDIVIDUAL - DINOWORLD
+   FICHA PROFESIONAL T-REX - DINOWORLD
    ================================================== */
 
+
+/* =========================
+   HEADER
+   ========================= */
+
 .ficha-header {
-    min-height: 75px;
+    width: 100%;
+    min-height: 78px;
+
     padding: 0 7%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(5, 15, 10, 0.92);
-    border-bottom: 1px solid rgba(117, 255, 149, 0.18);
-    position: relative;
-    z-index: 20;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(3, 10, 6, 0.88);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom:
+        1px solid rgba(151, 207, 124, 0.15);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.35);
 }
 
+
 .ficha-logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: #ffffff;
+
+    font-size: 1.45rem;
+    font-weight: 800;
+
     text-decoration: none;
+
+    letter-spacing: -0.5px;
 }
+
 
 .ficha-nav {
     display: flex;
-    gap: 30px;
+    gap: 32px;
 }
 
+
 .ficha-nav a {
-    color: #e6e6e6;
+    position: relative;
+
+    color: #d9e1db;
+
     text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
     transition: 0.3s;
 }
 
-.ficha-nav a:hover {
-    color: #8ed69a;
+
+.ficha-nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: #8eb66f;
+
+    transition: 0.3s;
 }
 
 
-/* CONTENEDOR GENERAL */
+.ficha-nav a:hover {
+    color: #ffffff;
+}
+
+
+.ficha-nav a:hover::after {
+    width: 100%;
+}
+
+
+
+/* =========================
+   CONTENEDOR GENERAL
+   ========================= */
 
 .ficha-dinosaurio {
-    width: min(1200px, 90%);
+    width: min(1200px, 92%);
+
     margin: auto;
-    padding: 50px 0 80px;
+
+    padding:
+        55px 0
+        100px;
 }
 
 
-/* HERO */
+
+/* =========================
+   HERO T-REX
+   ========================= */
 
 .ficha-hero {
-    min-height: 600px;
+    position: relative;
+
+    min-height: 620px;
+
     display: grid;
-    grid-template-columns: 1.15fr 1fr;
+
+    grid-template-columns:
+        1.1fr
+        0.9fr;
+
     align-items: center;
+
     gap: 60px;
+
+    padding:
+        55px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
 
     background:
         linear-gradient(
             135deg,
-            rgba(7, 28, 17, 0.96),
-            rgba(8, 10, 9, 0.94)
+            rgba(5, 18, 10, 0.97),
+            rgba(9, 28, 16, 0.94),
+            rgba(2, 8, 5, 0.98)
         );
 
-    border: 1px solid rgba(130, 255, 157, 0.15);
-    border-radius: 25px;
-    padding: 50px;
-    overflow: hidden;
+    border:
+        1px solid
+        rgba(148, 203, 118, 0.18);
 
     box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.55);
+        0 35px 90px rgba(0, 0, 0, 0.65);
 }
 
-.ficha-hero-imagen {
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+
+/* brillo verde del hero */
+
+.ficha-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: -150px;
+    bottom: -250px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(67, 127, 65, 0.25);
+
+    filter: blur(100px);
+
+    pointer-events: none;
 }
+
+
+/* pequeña textura de luz */
+
+.ficha-hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            115deg,
+            rgba(255, 255, 255, 0.04),
+            transparent 35%
+        );
+
+    pointer-events: none;
+}
+
+
+
+/* =========================
+   IMAGEN T-REX
+   ========================= */
+
+.ficha-hero-imagen {
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .ficha-hero-imagen::before {
     content: "";
+
     position: absolute;
 
-    width: 420px;
-    height: 420px;
+    width: 430px;
+    height: 430px;
 
     border-radius: 50%;
 
     background:
         radial-gradient(
             circle,
-            rgba(62, 145, 75, 0.3),
-            transparent 65%
+            rgba(119, 170, 96, 0.27),
+            rgba(37, 83, 43, 0.10) 45%,
+            transparent 72%
         );
 
-    filter: blur(5px);
+    filter: blur(8px);
 }
+
+
+.ficha-hero-imagen::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 40px;
+
+    width: 75%;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(0, 0, 0, 0.65);
+
+    filter: blur(20px);
+}
+
 
 .ficha-hero-imagen img {
     position: relative;
+
     z-index: 2;
 
     width: 100%;
@@ -1588,394 +1746,855 @@ footer {
     object-fit: contain;
 
     filter:
-        drop-shadow(0 25px 30px rgba(0, 0, 0, 0.75));
+        drop-shadow(
+            0 30px 30px
+            rgba(0, 0, 0, 0.70)
+        );
 
-    transition: transform 0.5s ease;
+    transition:
+        transform 0.6s ease;
 }
 
-.ficha-hero:hover .ficha-hero-imagen img {
-    transform: scale(1.03);
+
+.ficha-hero:hover
+.ficha-hero-imagen img {
+    transform:
+        scale(1.045);
 }
 
-.ficha-hero-info h1 {
-    margin: 15px 0 5px;
 
-    color: white;
 
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    line-height: 0.95;
+/* =========================
+   INFORMACIÓN HERO
+   ========================= */
 
-    text-transform: uppercase;
+.ficha-hero-info {
+    position: relative;
+
+    z-index: 3;
 }
+
 
 .ficha-etiqueta {
     display: inline-block;
 
-    background: #214d2d;
-    color: #b9f8c6;
+    padding:
+        8px 16px;
 
-    padding: 8px 15px;
-    border-radius: 100px;
+    border-radius: 50px;
 
-    font-size: 0.8rem;
-    font-weight: bold;
+    background:
+        rgba(103, 151, 78, 0.18);
 
-    letter-spacing: 1.5px;
+    border:
+        1px solid
+        rgba(152, 205, 125, 0.28);
+
+    color: #bce09e;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
     text-transform: uppercase;
 }
 
-.ficha-cientifico {
-    color: #88b991;
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+
+.ficha-hero-info h1 {
+    margin:
+        20px 0
+        8px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(
+            3rem,
+            5vw,
+            5.2rem
+        );
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 8px 30px
+        rgba(0, 0, 0, 0.85);
 }
+
+
+.ficha-cientifico {
+    margin-bottom: 25px;
+
+    color: #91b87c;
+
+    font-size: 1.15rem;
+}
+
 
 .ficha-introduccion {
-    color: #d1d1d1;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    margin-bottom: 30px;
+    max-width: 540px;
+
+    margin-bottom: 32px;
+
+    color: #d6ddd7;
+
+    font-size: 1.02rem;
+
+    line-height: 1.85;
 }
+
+
+
+/* =========================
+   BOTÓN HERO
+   ========================= */
 
 .ficha-boton {
-    display: inline-block;
+    display: inline-flex;
 
-    padding: 14px 25px;
+    align-items: center;
 
-    border-radius: 8px;
+    padding:
+        14px 25px;
 
-    background: #2c6e3d;
-    color: white;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #61874d,
+            #3d663b
+        );
+
+    color: #ffffff;
 
     text-decoration: none;
-    font-weight: bold;
 
-    transition: 0.3s;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        background 0.3s;
 }
+
 
 .ficha-boton:hover {
-    background: #3c8b50;
-    transform: translateY(-3px);
+    transform:
+        translateY(-4px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #78a65f,
+            #4c7948
+        );
+
+    box-shadow:
+        0 18px 35px
+        rgba(0, 0, 0, 0.45);
 }
 
 
-/* SECCIONES */
+
+/* =========================
+   SECCIONES
+   ========================= */
 
 .ficha-seccion {
     margin-top: 100px;
 }
 
+
 .ficha-titulo-seccion {
+    max-width: 800px;
+
+    margin:
+        0 auto
+        45px;
+
     text-align: center;
-    margin-bottom: 40px;
 }
+
 
 .ficha-titulo-seccion span,
 .ficha-subtitulo {
-    color: #78b987;
-    font-weight: bold;
-    font-size: 0.8rem;
+    color: #a5cd89;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
     letter-spacing: 3px;
+
+    text-transform: uppercase;
 }
+
 
 .ficha-titulo-seccion h2,
 .ficha-contenido h2,
 .ficha-panel h2 {
-    color: white;
-    font-size: clamp(2rem, 4vw, 3rem);
     margin-top: 10px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.1rem
+        );
+
+    line-height: 1.1;
+
+    text-shadow:
+        0 4px 20px
+        rgba(0, 0, 0, 0.75);
 }
 
 
-/* DATOS */
+
+/* =========================
+   DATOS PRINCIPALES
+   ========================= */
 
 .ficha-datos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 20px;
 }
 
+
 .ficha-dato {
-    padding: 30px 20px;
+    position: relative;
+
+    padding:
+        32px 22px;
+
+    overflow: hidden;
 
     text-align: center;
 
-    background: rgba(245, 246, 241, 0.94);
+    border-radius: 18px;
 
-    border-radius: 16px;
+    background:
+        rgba(
+            245,
+            247,
+            242,
+            0.96
+        );
 
-    transition: 0.3s;
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.65
+        );
+
+    box-shadow:
+        0 18px 45px
+        rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
+
+
+.ficha-dato::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #315e37,
+            #8eb66f
+        );
+}
+
 
 .ficha-dato:hover {
-    transform: translateY(-7px);
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(0, 0, 0, 0.5);
 }
 
+
 .ficha-dato > span {
+    display: block;
+
+    margin-bottom: 12px;
+
     font-size: 2rem;
 }
 
+
 .ficha-dato h3 {
-    margin: 12px 0 6px;
-    color: #183c23;
+    margin-bottom: 5px;
+
+    color: #17351d;
+
+    font-size: 1rem;
 }
+
 
 .ficha-dato p {
-    color: #555;
+    color: #58625a;
+
+    font-size: 0.9rem;
 }
 
 
-/* TEXTO */
+
+/* =========================
+   BLOQUES DE TEXTO
+   ========================= */
 
 .ficha-contenido {
-    max-width: 900px;
+    max-width: 950px;
+
+    padding:
+        50px;
+
+    border-radius: 24px;
+
+    background:
+        rgba(
+            5,
+            17,
+            10,
+            0.88
+        );
+
+    border:
+        1px solid
+        rgba(
+            151,
+            201,
+            124,
+            0.15
+        );
+
+    backdrop-filter:
+        blur(12px);
+
+    box-shadow:
+        0 20px 55px
+        rgba(0, 0, 0, 0.35);
 }
+
 
 .ficha-contenido p {
-    color: #d0d0d0;
-    line-height: 1.9;
-    font-size: 1.05rem;
     margin-top: 18px;
+
+    color: #d6ddd7;
+
+    font-size: 1.02rem;
+
+    line-height: 1.9;
 }
 
 
-/* PANELES */
+
+/* =========================
+   HÁBITAT / ALIMENTACIÓN
+   ========================= */
 
 .ficha-doble {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
     gap: 25px;
 }
 
+
 .ficha-panel {
     position: relative;
-    padding: 45px;
 
-    background: rgba(9, 27, 17, 0.92);
+    padding:
+        45px;
 
-    border: 1px solid rgba(116, 255, 150, 0.12);
+    overflow: hidden;
 
-    border-radius: 20px;
+    border-radius: 23px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(8, 28, 16, 0.94),
+            rgba(4, 13, 8, 0.96)
+        );
+
+    border:
+        1px solid
+        rgba(
+            145,
+            195,
+            119,
+            0.16
+        );
+
+    box-shadow:
+        0 20px 55px
+        rgba(0, 0, 0, 0.42);
+
+    transition:
+        transform 0.3s;
 }
+
+
+.ficha-panel:hover {
+    transform:
+        translateY(-5px);
+}
+
 
 .ficha-panel-numero {
     display: block;
 
-    color: rgba(124, 195, 138, 0.35);
+    margin-bottom: 12px;
 
-    font-size: 4rem;
-    font-weight: bold;
+    color:
+        rgba(
+            156,
+            205,
+            131,
+            0.28
+        );
 
-    margin-bottom: 15px;
+    font-size: 4.5rem;
+
+    font-weight: 900;
+
+    line-height: 1;
 }
+
 
 .ficha-panel p {
-    color: #cfcfcf;
+    margin-top: 17px;
+
+    color: #ccd5ce;
+
     line-height: 1.8;
-    margin-top: 15px;
 }
 
 
-/* CURIOSIDADES */
+
+/* =========================
+   CURIOSIDADES
+   ========================= */
 
 .ficha-curiosidades {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
 }
+
 
 .ficha-curiosidades article {
-    background: rgba(245, 246, 241, 0.94);
+    position: relative;
 
-    border-radius: 18px;
+    padding:
+        35px;
 
-    padding: 35px;
+    border-radius: 20px;
 
-    transition: 0.3s;
+    background:
+        rgba(
+            246,
+            248,
+            243,
+            0.97
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.55
+        );
+
+    box-shadow:
+        0 18px 45px
+        rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
+
 
 .ficha-curiosidades article:hover {
-    transform: translateY(-5px);
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.48);
 }
+
 
 .ficha-curiosidades article > span {
-    color: #438150;
+    display: block;
 
-    font-size: 2rem;
-    font-weight: bold;
+    margin-bottom: 10px;
+
+    color: #6e9860;
+
+    font-size: 2.3rem;
+
+    font-weight: 900;
 }
+
 
 .ficha-curiosidades h3 {
-    color: #16381f;
-    margin: 12px 0;
+    margin-bottom: 10px;
+
+    color: #17351d;
+
+    font-size: 1.25rem;
 }
 
+
 .ficha-curiosidades p {
-    color: #555;
+    color: #59635b;
+
     line-height: 1.7;
 }
 
 
-/* VOLVER */
+
+/* =========================
+   VOLVER
+   ========================= */
 
 .ficha-volver {
-    margin-top: 100px;
+    margin-top: 90px;
+
     text-align: center;
 }
 
-.ficha-volver a {
-    color: #a8dfb1;
 
-    font-weight: bold;
+.ficha-volver a {
+    display: inline-block;
+
+    padding:
+        13px 22px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(
+            7,
+            25,
+            14,
+            0.85
+        );
+
+    border:
+        1px solid
+        rgba(
+            145,
+            198,
+            117,
+            0.24
+        );
+
+    color: #b7d8a1;
 
     text-decoration: none;
 
-    font-size: 1.05rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    transition:
+        0.3s;
 }
+
 
 .ficha-volver a:hover {
-    text-decoration: underline;
+    color: #ffffff;
+
+    background:
+        rgba(
+            75,
+            112,
+            61,
+            0.80
+        );
+
+    transform:
+        translateY(-3px);
 }
 
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+   ========================= */
 
 .ficha-footer {
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+        55px 20px;
+
     text-align: center;
 
-    padding: 50px 20px;
+    background:
+        rgba(
+            2,
+            8,
+            4,
+            0.95
+        );
 
-    background: rgba(4, 13, 8, 0.97);
-
-    color: #cccccc;
+    border-top:
+        1px solid
+        rgba(
+            145,
+            195,
+            119,
+            0.12
+        );
 }
+
 
 .ficha-footer h2 {
-    color: white;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+
+    color: #ffffff;
+
+    font-size: 1.5rem;
 }
+
+
+.ficha-footer p {
+    color: #9ca79f;
+}
+
 
 .ficha-copyright {
     margin-top: 20px;
-    color: #777;
+
+    color: #687069 !important;
+
+    font-size: 0.8rem;
 }
 
 
+
 /* ==================================================
-   TABLET Y CELULAR
+   TABLET
    ================================================== */
 
-@media (max-width: 850px) {
-
-    .ficha-header {
-        padding: 0 5%;
-    }
-
-    .ficha-nav {
-        gap: 15px;
-    }
-
-    .ficha-dinosaurio {
-        width: 92%;
-        padding-top: 25px;
-    }
+@media (max-width: 900px) {
 
     .ficha-hero {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
-        gap: 10px;
+        gap: 5px;
 
-        padding: 30px 20px;
+        padding:
+            40px 30px;
 
         text-align: center;
     }
 
+
     .ficha-hero-imagen {
-        min-height: 300px;
+        min-height: 350px;
     }
 
-    .ficha-hero-imagen::before {
-        width: 280px;
-        height: 280px;
-    }
 
     .ficha-hero-imagen img {
-        max-height: 330px;
+        max-height: 380px;
     }
 
-    .ficha-hero-info h1 {
-        font-size: 3rem;
+
+    .ficha-hero-info {
+        max-width: 650px;
+
+        margin: auto;
     }
+
+
+    .ficha-introduccion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
     .ficha-datos {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
+
 
     .ficha-doble {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
     }
 
-    .ficha-curiosidades {
-        grid-template-columns: 1fr;
+}
+
+
+
+/* ==================================================
+   CELULAR
+   ================================================== */
+
+@media (max-width: 600px) {
+
+    .ficha-header {
+        min-height: 70px;
+
+        padding:
+            0 18px;
     }
+
+
+    .ficha-logo {
+        font-size: 1.15rem;
+    }
+
+
+    .ficha-nav {
+        gap: 14px;
+    }
+
+
+    .ficha-nav a {
+        font-size: 0.76rem;
+    }
+
+
+    .ficha-dinosaurio {
+        width: 94%;
+
+        padding-top: 22px;
+    }
+
+
+    .ficha-hero {
+        min-height: auto;
+
+        padding:
+            25px 18px
+            35px;
+
+        border-radius: 20px;
+    }
+
+
+    .ficha-hero-imagen {
+        min-height: 270px;
+    }
+
+
+    .ficha-hero-imagen::before {
+        width: 260px;
+        height: 260px;
+    }
+
+
+    .ficha-hero-imagen img {
+        max-height: 290px;
+    }
+
+
+    .ficha-hero-info h1 {
+        font-size:
+            clamp(
+                2.4rem,
+                12vw,
+                3.4rem
+            );
+
+        letter-spacing: -2px;
+    }
+
+
+    .ficha-introduccion {
+        font-size: 0.94rem;
+    }
+
 
     .ficha-seccion {
         margin-top: 70px;
     }
-}
-
-
-/* CELULARES PEQUEÑOS */
-
-@media (max-width: 500px) {
-
-    .ficha-logo {
-        font-size: 1.2rem;
-    }
-
-    .ficha-nav a {
-        font-size: 0.85rem;
-    }
-
-    .ficha-datos {
-        grid-template-columns: 1fr;
-    }
-
-    .ficha-panel {
-        padding: 30px 25px;
-    }
-
-    .ficha-hero-info h1 {
-        font-size: 2.5rem;
-    }
-}
-
-/* CELULARES PEQUEÑOS */
-
-@media (max-width: 500px) {
-
-    .ficha-logo {
-        font-size: 1.2rem;
-    }
-
-
-    .ficha-nav a {
-        font-size: 0.85rem;
-    }
 
 
     .ficha-datos {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .ficha-contenido {
+        padding:
+            32px 24px;
+
+        border-radius: 18px;
     }
 
 
     .ficha-panel {
-        padding: 30px 25px;
+        padding:
+            32px 25px;
     }
 
 
-    .ficha-hero-info h1 {
-        font-size: 2.5rem;
+    .ficha-panel-numero {
+        font-size: 3.5rem;
+    }
+
+
+    .ficha-curiosidades {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .ficha-curiosidades article {
+        padding:
+            28px 25px;
     }
 
 }
