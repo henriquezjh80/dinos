@@ -1488,10 +1488,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background: rgba(5, 15, 10, 0.92);
     border-bottom: 1px solid rgba(117, 255, 149, 0.18);
-
     position: relative;
     z-index: 20;
 }
@@ -1532,7 +1530,6 @@ footer {
 
 .ficha-hero {
     min-height: 600px;
-
     display: grid;
     grid-template-columns: 1.15fr 1fr;
     align-items: center;
@@ -1547,30 +1544,23 @@ footer {
 
     border: 1px solid rgba(130, 255, 157, 0.15);
     border-radius: 25px;
-
     padding: 50px;
-
     overflow: hidden;
 
     box-shadow:
         0 25px 70px rgba(0, 0, 0, 0.55);
 }
 
-
 .ficha-hero-imagen {
     min-height: 500px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
 }
 
-
 .ficha-hero-imagen::before {
     content: "";
-
     position: absolute;
 
     width: 420px;
@@ -1588,7 +1578,6 @@ footer {
     filter: blur(5px);
 }
 
-
 .ficha-hero-imagen img {
     position: relative;
     z-index: 2;
@@ -1604,11 +1593,9 @@ footer {
     transition: transform 0.5s ease;
 }
 
-
 .ficha-hero:hover .ficha-hero-imagen img {
     transform: scale(1.03);
 }
-
 
 .ficha-hero-info h1 {
     margin: 15px 0 5px;
@@ -1621,7 +1608,6 @@ footer {
     text-transform: uppercase;
 }
 
-
 .ficha-etiqueta {
     display: inline-block;
 
@@ -1629,7 +1615,6 @@ footer {
     color: #b9f8c6;
 
     padding: 8px 15px;
-
     border-radius: 100px;
 
     font-size: 0.8rem;
@@ -1639,25 +1624,18 @@ footer {
     text-transform: uppercase;
 }
 
-
 .ficha-cientifico {
     color: #88b991;
-
     font-size: 1.2rem;
-
     margin-bottom: 25px;
 }
 
-
 .ficha-introduccion {
     color: #d1d1d1;
-
     font-size: 1.05rem;
     line-height: 1.8;
-
     margin-bottom: 30px;
 }
-
 
 .ficha-boton {
     display: inline-block;
@@ -1667,7 +1645,6 @@ footer {
     border-radius: 8px;
 
     background: #2c6e3d;
-
     color: white;
 
     text-decoration: none;
@@ -1676,10 +1653,8 @@ footer {
     transition: 0.3s;
 }
 
-
 .ficha-boton:hover {
     background: #3c8b50;
-
     transform: translateY(-3px);
 }
 
@@ -1690,33 +1665,24 @@ footer {
     margin-top: 100px;
 }
 
-
 .ficha-titulo-seccion {
     text-align: center;
-
     margin-bottom: 40px;
 }
-
 
 .ficha-titulo-seccion span,
 .ficha-subtitulo {
     color: #78b987;
-
     font-weight: bold;
-
     font-size: 0.8rem;
-
     letter-spacing: 3px;
 }
-
 
 .ficha-titulo-seccion h2,
 .ficha-contenido h2,
 .ficha-panel h2 {
     color: white;
-
     font-size: clamp(2rem, 4vw, 3rem);
-
     margin-top: 10px;
 }
 
@@ -1725,13 +1691,9 @@ footer {
 
 .ficha-datos {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
 
 .ficha-dato {
     padding: 30px 20px;
@@ -1745,23 +1707,18 @@ footer {
     transition: 0.3s;
 }
 
-
 .ficha-dato:hover {
     transform: translateY(-7px);
 }
-
 
 .ficha-dato > span {
     font-size: 2rem;
 }
 
-
 .ficha-dato h3 {
     margin: 12px 0 6px;
-
     color: #183c23;
 }
-
 
 .ficha-dato p {
     color: #555;
@@ -1774,14 +1731,10 @@ footer {
     max-width: 900px;
 }
 
-
 .ficha-contenido p {
     color: #d0d0d0;
-
     line-height: 1.9;
-
     font-size: 1.05rem;
-
     margin-top: 18px;
 }
 
@@ -1790,17 +1743,12 @@ footer {
 
 .ficha-doble {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
-
 .ficha-panel {
     position: relative;
-
     padding: 45px;
 
     background: rgba(9, 27, 17, 0.92);
@@ -1809,7 +1757,6 @@ footer {
 
     border-radius: 20px;
 }
-
 
 .ficha-panel-numero {
     display: block;
@@ -1822,12 +1769,9 @@ footer {
     margin-bottom: 15px;
 }
 
-
 .ficha-panel p {
     color: #cfcfcf;
-
     line-height: 1.8;
-
     margin-top: 15px;
 }
 
@@ -1836,13 +1780,9 @@ footer {
 
 .ficha-curiosidades {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-
 
 .ficha-curiosidades article {
     background: rgba(245, 246, 241, 0.94);
@@ -1854,11 +1794,9 @@ footer {
     transition: 0.3s;
 }
 
-
 .ficha-curiosidades article:hover {
     transform: translateY(-5px);
 }
-
 
 .ficha-curiosidades article > span {
     color: #438150;
@@ -1867,17 +1805,13 @@ footer {
     font-weight: bold;
 }
 
-
 .ficha-curiosidades h3 {
     color: #16381f;
-
     margin: 12px 0;
 }
 
-
 .ficha-curiosidades p {
     color: #555;
-
     line-height: 1.7;
 }
 
@@ -1886,10 +1820,8 @@ footer {
 
 .ficha-volver {
     margin-top: 100px;
-
     text-align: center;
 }
-
 
 .ficha-volver a {
     color: #a8dfb1;
@@ -1900,7 +1832,6 @@ footer {
 
     font-size: 1.05rem;
 }
-
 
 .ficha-volver a:hover {
     text-decoration: underline;
@@ -1919,23 +1850,19 @@ footer {
     color: #cccccc;
 }
 
-
 .ficha-footer h2 {
     color: white;
-
     margin-bottom: 10px;
 }
 
-
 .ficha-copyright {
     margin-top: 20px;
-
     color: #777;
 }
 
 
 /* ==================================================
-   CELULAR
+   TABLET Y CELULAR
    ================================================== */
 
 @media (max-width: 850px) {
@@ -1948,13 +1875,10 @@ footer {
         gap: 15px;
     }
 
-
     .ficha-dinosaurio {
         width: 92%;
-
         padding-top: 25px;
     }
-
 
     .ficha-hero {
         grid-template-columns: 1fr;
@@ -1966,50 +1890,65 @@ footer {
         text-align: center;
     }
 
-
     .ficha-hero-imagen {
         min-height: 300px;
     }
-
 
     .ficha-hero-imagen::before {
         width: 280px;
         height: 280px;
     }
 
-
     .ficha-hero-imagen img {
         max-height: 330px;
     }
-
 
     .ficha-hero-info h1 {
         font-size: 3rem;
     }
 
-
     .ficha-datos {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
 
     .ficha-doble {
         grid-template-columns: 1fr;
     }
 
-
     .ficha-curiosidades {
         grid-template-columns: 1fr;
     }
 
-
     .ficha-seccion {
         margin-top: 70px;
     }
-
 }
 
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width: 500px) {
+
+    .ficha-logo {
+        font-size: 1.2rem;
+    }
+
+    .ficha-nav a {
+        font-size: 0.85rem;
+    }
+
+    .ficha-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .ficha-panel {
+        padding: 30px 25px;
+    }
+
+    .ficha-hero-info h1 {
+        font-size: 2.5rem;
+    }
+}
 
 /* CELULARES PEQUEÑOS */
 
