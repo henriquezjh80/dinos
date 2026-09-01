@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content=" descubre dinosaurios y criaturas prehistóricas, sus características, alimentación y periodo geológico."
+    >
+
+    <title>Explora el mundo prehistórico</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="header">
+        <header class="header">
+
+    <div class="navbar">
+
+        <a href="#inicio" class="logo">
+            <span class="logo-icono">🦖</span>
+
+            <div>
+                <span class="logo-nombre">DinoWorld</span>
+                <span class="logo-subtitulo">Enciclopedia prehistórica</span>
+            </div>
+        </a>
+
+        <!-- BOTÓN CELULAR -->
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+        >
+            ☰
+        </button>
+
+        <nav class="menu" id="menu">
+
+            <a href="#inicio">Inicio</a>
+
+            <a href="#explorar">Explorar</a>
+
+            <a href="#curiosidades">Curiosidades</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+        <div class="navbar">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icono">🦖</span>
+
+                <div>
+                    <span class="logo-nombre">penesito</span>
+                    <span class="logo-subtitulo">Enciclopedia prehistórica</span>
+                </div>
+            </a>
+
+
+            <nav class="menu">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#explorar">
+                    Explorar
+                </a>
+
+                <a href="#curiosidades">
+                    Curiosidades
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ========================= -->
+        <!-- HERO -->
+        <!-- ========================= -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-contenido">
+
+                <span class="hero-etiqueta">
+                    VIAJA MILLONES DE AÑOS AL PASADO
+                </span>
+
+                <h1>
+                    Descubre un mundo
+                    <span>prehistórico</span>
+                </h1>
+
+                <p>
+                    Explora algunas de las criaturas más sorprendentes
+                    que habitaron nuestro planeta y conoce su tamaño,
+                    alimentación, periodo y características.
+                </p>
+
+                <div class="hero-botones">
+
+                    <a href="#explorar" class="boton boton-principal">
+                        Explorar criaturas
+                    </a>
+
+                    <a href="#curiosidades" class="boton boton-secundario">
+                        Ver curiosidades
+                    </a>
+
+                </div>
+
+
+                <div class="hero-datos">
+
+                    <div>
+                        <strong>8</strong>
+                        <span>Criaturas</span>
+                    </div>
+
+                    <div>
+                        <strong>3</strong>
+                        <span>Periodos</span>
+                    </div>
+
+                    <div>
+                        <strong>230M+</strong>
+                        <span>Años de historia</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- EXPLORAR -->
+        <!-- ========================= -->
+
+        <section id="explorar" class="seccion explorar">
+
+            <div class="encabezado-seccion">
+
+                <span class="mini-titulo">
+                    ENCICLOPEDIA
+                </span>
+
+                <h2>
+                    Explora el mundo prehistórico
+                </h2>
+
+                <p>
+                    Busca una criatura por su nombre o utiliza los filtros
+                    para descubrir diferentes especies.
+                </p>
+
+            </div>
+
+
+
+            <!-- BUSCADOR -->
+
+            <div class="herramientas">
+
+                <div class="contenedor-buscador">
+
+                    <span class="icono-buscar">⌕</span>
+
+                    <input
+                        type="text"
+                        id="buscador"
+                        placeholder="Buscar Tyrannosaurus, Spinosaurus..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <div class="botones-filtro">
+
+                    <button
+                        class="filtro activo"
+                        data-filtro="todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="carnivoro"
+                    >
+                        Carnívoros
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="herbivoro"
+                    >
+                        Herbívoros
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="omnivoro"
+                    >
+                        Omnívoros
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="volador"
+                    >
+                        Voladores
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <p id="contador" class="contador">
+                Mostrando 8 criaturas
+            </p>
+
+
+
+            <!-- ========================= -->
+            <!-- TARJETAS -->
+            <!-- ========================= -->
+
+            <div class="contenedor-tarjetas">
+
+
+                <!-- T-REX -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="carnivoro"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/trex.png"
+                            alt="Tyrannosaurus Rex"
+                        >
+
+                        <span class="badge carnivoro">
+                            Carnívoro
+                        </span>
+
+                        <span class="periodo">
+                            Cretácico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>
+                            Tyrannosaurus Rex
+                        </h3>
+
+                        <p class="nombre-cientifico">
+                            Tyrannosaurus rex
+                        </p>
+
+                        <p class="descripcion">
+                            Uno de los mayores depredadores terrestres
+                            conocidos y uno de los dinosaurios más famosos.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>📏</span>
+
+                                <p>
+                                    <small>Longitud</small>
+                                    <strong>12 - 13 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>Norteamérica</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="trex"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TRICERATOPS -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="herbivoro"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/triceratops.jpg"
+                            alt="Triceratops"
+                        >
+
+                        <span class="badge herbivoro">
+                            Herbívoro
+                        </span>
+
+                        <span class="periodo">
+                            Cretácico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Triceratops</h3>
+
+                        <p class="nombre-cientifico">
+                            Triceratops horridus
+                        </p>
+
+                        <p class="descripcion">
+                            Dinosaurio herbívoro reconocido por sus tres
+                            cuernos y su característica gola ósea.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>📏</span>
+
+                                <p>
+                                    <small>Longitud</small>
+                                    <strong>8 - 9 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>Norteamérica</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="triceratops"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- VELOCIRAPTOR -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="carnivoro"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/velociraptor.jpg"
+                            alt="Velociraptor"
+                        >
+
+                        <span class="badge carnivoro">
+                            Carnívoro
+                        </span>
+
+                        <span class="periodo">
+                            Cretácico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Velociraptor</h3>
+
+                        <p class="nombre-cientifico">
+                            Velociraptor mongoliensis
+                        </p>
+
+                        <p class="descripcion">
+                            Pequeño terópodo emplumado y ágil que poseía
+                            una característica garra curvada en cada pie.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>📏</span>
+
+                                <p>
+                                    <small>Longitud</small>
+                                    <strong>~2 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>Asia</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="velociraptor"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- STEGOSAURUS -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="herbivoro"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/stegosaurus.jpg"
+                            alt="Stegosaurus"
+                        >
+
+                        <span class="badge herbivoro">
+                            Herbívoro
+                        </span>
+
+                        <span class="periodo">
+                            Jurásico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Stegosaurus</h3>
+
+                        <p class="nombre-cientifico">
+                            Stegosaurus stenops
+                        </p>
+
+                        <p class="descripcion">
+                            Famoso por sus grandes placas dorsales
+                            y las fuertes púas situadas en su cola.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>📏</span>
+
+                                <p>
+                                    <small>Longitud</small>
+                                    <strong>~7 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>Norteamérica</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="stegosaurus"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- BRACHIOSAURUS -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="herbivoro"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/braciosaurus.jpg"
+                            alt="Brachiosaurus"
+                        >
+
+                        <span class="badge herbivoro">
+                            Herbívoro
+                        </span>
+
+                        <span class="periodo">
+                            Jurásico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Brachiosaurus</h3>
+
+                        <p class="nombre-cientifico">
+                            Brachiosaurus altithorax
+                        </p>
+
+                        <p class="descripcion">
+                            Gigantesco saurópodo cuyo largo cuello le
+                            permitía alcanzar vegetación a gran altura.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>📏</span>
+
+                                <p>
+                                    <small>Longitud</small>
+                                    <strong>~20 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>Norteamérica</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="brachiosaurus"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SPINOSAURUS -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="carnivoro"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/spinosaurus.jpg"
+                            alt="Spinosaurus"
+                        >
+
+                        <span class="badge carnivoro">
+                            Carnívoro
+                        </span>
+
+                        <span class="periodo">
+                            Cretácico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Spinosaurus</h3>
+
+                        <p class="nombre-cientifico">
+                            Spinosaurus aegyptiacus
+                        </p>
+
+                        <p class="descripcion">
+                            Gran terópodo de hocico alargado caracterizado
+                            por las largas espinas de su espalda.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>📏</span>
+
+                                <p>
+                                    <small>Longitud</small>
+                                    <strong>~14 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>África</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="spinosaurus"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TROODON -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="omnivoro"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/troodon.jpg"
+                            alt="Troodon"
+                        >
+
+                        <span class="badge omnivoro">
+                            Omnívoro
+                        </span>
+
+                        <span class="periodo">
+                            Cretácico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Troodon</h3>
+
+                        <p class="nombre-cientifico">
+                            Troodon formosus
+                        </p>
+
+                        <p class="descripcion">
+                            Nombre históricamente utilizado para fósiles
+                            de pequeños dinosaurios terópodos.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>📏</span>
+
+                                <p>
+                                    <small>Longitud</small>
+                                    <strong>~2 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>Norteamérica</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="troodon"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- QUETZALCOATLUS -->
+
+                <article
+                    class="tarjeta"
+                    data-categoria="volador"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="img/quetzalcoatlus.png"
+                            alt="Quetzalcoatlus"
+                        >
+
+                        <span class="badge volador">
+                            Pterosaurio
+                        </span>
+
+                        <span class="periodo">
+                            Cretácico
+                        </span>
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Quetzalcoatlus</h3>
+
+                        <p class="nombre-cientifico">
+                            Quetzalcoatlus northropi
+                        </p>
+
+                        <p class="descripcion">
+                            Uno de los animales voladores más grandes
+                            conocidos. Era un pterosaurio, no un dinosaurio.
+                        </p>
+
+                        <div class="datos-tarjeta">
+
+                            <div>
+                                <span>🪽</span>
+
+                                <p>
+                                    <small>Envergadura</small>
+                                    <strong>~10 m</strong>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>🌎</span>
+
+                                <p>
+                                    <small>Región</small>
+                                    <strong>Norteamérica</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="ver-mas"
+                            data-dino="quetzalcoatlus"
+                        >
+                            Ver información
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- SI NO EXISTEN RESULTADOS -->
+
+            <div id="sin-resultados" class="sin-resultados">
+
+                <span>🦴</span>
+
+                <h3>
+                    No encontramos esa criatura
+                </h3>
+
+                <p>
+                    Intenta buscar otro nombre o selecciona otro filtro.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- CURIOSIDADES -->
+        <!-- ========================= -->
+
+        <section id="curiosidades" class="seccion curiosidades">
+
+            <div class="encabezado-seccion">
+
+                <span class="mini-titulo">
+                    ¿SABÍAS QUE?
+                </span>
+
+                <h2>
+                    Curiosidades prehistóricas
+                </h2>
+
+            </div>
+
+
+            <div class="grid-curiosidades">
+
+                <article>
+
+                    <span class="curiosidad-icono">
+                        🌍
+                    </span>
+
+                    <h3>
+                        Un planeta diferente
+                    </h3>
+
+                    <p>
+                        Durante la era de los dinosaurios, los continentes
+                        tenían posiciones muy diferentes a las actuales.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span class="curiosidad-icono">
+                        🪶
+                    </span>
+
+                    <h3>
+                        Dinosaurios con plumas
+                    </h3>
+
+                    <p>
+                        Numerosos dinosaurios terópodos poseían plumas.
+                        Las aves modernas forman parte del linaje dinosauriano.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span class="curiosidad-icono">
+                        ☄️
+                    </span>
+
+                    <h3>
+                        Una extinción masiva
+                    </h3>
+
+                    <p>
+                        Hace aproximadamente 66 millones de años ocurrió
+                        una extinción masiva que eliminó a los dinosaurios
+                        no avianos.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ========================= -->
+    <!-- MODAL -->
+    <!-- ========================= -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-fondo"></div>
+
+        <div class="modal-contenido">
+
+            <button
+                id="cerrar-modal"
+                class="cerrar-modal"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+
+            <img
+                id="modal-imagen"
+                src=""
+                alt=""
+            >
+
+
+            <div class="modal-info">
+
+                <span id="modal-periodo" class="modal-periodo"></span>
+
+                <h2 id="modal-nombre"></h2>
+
+                <p id="modal-cientifico" class="modal-cientifico"></p>
+
+                <p id="modal-descripcion"></p>
+
+
+                <div class="modal-datos">
+
+                    <div>
+                        <small>Alimentación</small>
+                        <strong id="modal-alimentacion"></strong>
+                    </div>
+
+                    <div>
+                        <small>Tamaño</small>
+                        <strong id="modal-tamano"></strong>
+                    </div>
+
+                    <div>
+                        <small>Región</small>
+                        <strong id="modal-region"></strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <div class="footer-contenido">
+
+            <div>
+
+                <h2>
+                    🦖 penesito
+                </h2>
+
+                <p>
+                    Proyecto web educativo sobre dinosaurios
+                    y criaturas prehistóricas.
+                </p>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 penesito
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
